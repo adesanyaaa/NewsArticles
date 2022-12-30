@@ -29,7 +29,7 @@ class NewsListAdapter: RecyclerView.Adapter<NewsListAdapter.NewsItemViewHolder>(
     override fun getItemCount() = newsItems.size
 
     class NewsItemViewHolder(
-        val binding: ItemNewsBinding
+        private val binding: ItemNewsBinding
     ): RecyclerView.ViewHolder(binding.root) {
         private val imageView = binding.newsImage
         private val author = binding.newsAuthor
